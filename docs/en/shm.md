@@ -36,13 +36,13 @@ This module introduces the measurement and interpretation workflow used to infer
 
 | Unit | Topic | Interactive support |
 | --- | --- | --- |
+| 00 | Sensor selection for building SHM | Sensor package guide |
 | 01 | Vibration signals and sampling | Signal synthesis lab |
 | 02 | Frequency content and FFT resolution | FFT resolution lab |
 | 03 | Damping and free decay | Damping lab |
 | 04 | Mode shapes and sensor placement | Mode-shape lab |
-| 05 | Sensor selection for building SHM | Sensor package guide |
 
-## Sensor selection for building SHM
+## Unit 00: Sensor selection for building SHM
 
 For building SHM, acceleration, velocity, and displacement response are all useful, but **accelerometers are usually the primary/default sensors** for dynamic monitoring under wind, earthquake, ambient vibration, and operational modal analysis. They are normally paired with environmental sensors and, when the monitoring goal requires local or static response, with displacement, strain, tilt, crack, or other local-damage sensors.
 
