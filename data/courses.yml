@@ -1,0 +1,17 @@
+courses:
+  - code: SHM-01
+    title: Structural Health Monitoring module
+    term: Research and teaching module
+    summary: Vibration data, system identification, modal parameters, sensors, and practical interpretation for civil structures.
+  - code: CE 332
+    title: Steel Structures Design
+    term: Semester 1
+    summary: Design procedures, member checks, connection behavior, and code-based structural steel decisions.
+  - code: CE 334
+    title: Timber Structures Design
+    term: Semester 1
+    summary: Timber material behavior, member design, serviceability, and structural detailing.
+  - code: CE 311
+    title: Building Design
+    term: Semester 2
+    summary: Integrated building design workflow across loading, analysis, structural systems, and documentation.

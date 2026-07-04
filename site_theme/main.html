@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{ page.meta.lang | default(config.extra.default_lang) }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.meta.description | default(config.site_description) }}">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.site_name }}</title>
+  <link rel="icon" href="{{ 'assets/logos/favicon-32.png'|url }}">
+  <link rel="stylesheet" href="{{ 'assets/css/site.css'|url }}">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="{{ nav.homepage.url|url }}" aria-label="{{ config.site_name }}">
+          <img src="{{ 'assets/logos/kj-lockup-horizontal-color.svg'|url }}" alt="Kittikun Jitpairod">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <nav class="site-nav" aria-label="Main navigation" data-site-nav>
+          {% for nav_item in nav %}
+            {% if nav_item.url %}
+              <a href="{{ nav_item.url|url }}" class="{% if nav_item.active %}is-active{% endif %}">{{ nav_item.title }}</a>
+            {% endif %}
+          {% endfor %}
+          <a class="language-link" href="{{ 'th/'|url }}">TH</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      {% if page.is_homepage %}
+        {{ page.content }}
+      {% else %}
+        <article class="page-content">
+          {{ page.content }}
+        </article>
+      {% endif %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <img src="{{ 'assets/logos/kj-monogram-color.svg'|url }}" alt="">
+        <span>2026 Dr. Kittikun Jitpairod | Department of Civil Engineering, Chiang Mai University</span>
+      </div>
+    </footer>
+  </div>
+  <script src="{{ 'assets/js/site.js'|url }}"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+publications:
+  - year: 2026
+    title: Surrogate-assisted optimization of structural systems under code constraints
+    venue: Working manuscript
+    topic: Optimization
+  - year: 2025
+    title: Data-informed modal assessment for civil infrastructure monitoring
+    venue: Teaching and research note
+    topic: SHM
+  - year: 2025
+    title: Finite element modelling workflows for steel structural components
+    venue: Research note
+    topic: FEA

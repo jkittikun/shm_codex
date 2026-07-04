@@ -1,0 +1,50 @@
+site_name: Structural Health Monitoring | Kittikun Jitpairod
+site_description: Research, teaching, and interactive Structural Health Monitoring modules by Dr. Kittikun Jitpairod.
+site_author: Dr. Kittikun Jitpairod
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+strict: true
+
+theme:
+  name: null
+  custom_dir: site_theme
+  locale: en
+
+nav:
+  - Home: index.md
+  - Research: en/research.md
+  - Teaching: en/teaching.md
+  - Structural Health Monitoring: en/shm.md
+  - Interactive labs: en/interactive-labs.md
+  - Publications: en/publications.md
+  - Resources: en/resources.md
+  - Contact: en/contact.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - toc:
+      permalink: false
+      toc_depth: 3
+  - tables
+
+plugins:
+  - search
+
+extra:
+  default_lang: en
+  language_status:
+    en: English first
+    th: Thai pages authored later
+  profile:
+    name: Dr. Kittikun Jitpairod
+    role: structural engineering | cmu
+    department: Department of Civil Engineering, Chiang Mai University
+    email: kittikun.j@cmu.ac.th
+    research_focus: Structural health monitoring, computational mechanics, steel design, and AI-assisted structural design.
+  cloudflare:
+    build_command: pip install -r requirements.txt && python scripts/build_interactives.py && mkdocs build
+    output_directory: site
